@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đăng nhập</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style/signin.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2> Đăng Nhập</h2>
+        <label>Email đăng nhập </label> <br>
+        <span><i class="fa-regular fa-user"></i></span>
+        <input type="text" placeholder="Nhập email" id="login"> <br>
+
+        <label>Mật khẩu</label> <br>
+        <span><i class="fa-solid fa-lock"></i></span>
+        <input type="password" placeholder="mật khẩu" id="pass"> <br>
+
+        <button onclick="loginBtn()" >Đăng Nhập</button>
+        <p>Bạn chưa có tài khoản ? Đăng ký tài khoản bên dưới </p>
+        <button onclick="registerPage()">Đăng ký</button>
+    </div>
+       
+    <div class="clickTeddyStore"><a href="./index.html">Trở về trang chủ</a></div>
+    
+    <div id="snack-bar-login" class="snackBar"> 
+       
+    </div>
+
+    
+    <script src="../js/register-login.js"></script>
+</body>
+
+</html>

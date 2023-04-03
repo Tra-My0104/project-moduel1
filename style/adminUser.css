@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/bodybackground.gif);
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px 20px;
+    width: 90%;
+    height: 300px;
+    text-align: center;
+}
+
+.inputTable {
+    margin-left: 70px;
+}
+
+.inputProfile {
+    text-align: center;
+}
+
+tr,td {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+tr:nth-child(odd) {
+    background: linear-gradient(to bottom, #84E6FF 0%, #FDB5FF 50%, #8CFFED 100%);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(252, 207, 234);
+}
+
+
+input {
+    height: 40px;
+    width: 400px;
+    font-size: larger;
+}
+
+label{
+    font-size: larger;
+}
+
+button {
+    height: 50px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: #ff197d;
+    color: rgb(243, 240, 240);
+    margin-top: 50px;
+}
+
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #ec2b88;
+}
+
+a {
+    text-decoration: none;
+    color: #fffafd;
+    border: 2px dashed black;
+    background-color: #e40f76;
+    font-size: xx-large;
+    border-radius: 10px;
+}
+
+.clickAA {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.product-input {
+    width: 200px;
+    height: 50px;
+}
+
+.small-container {
+    padding-top: 30px;
+}
+
+
+
+#image{
+    font-size: x-large;
+}

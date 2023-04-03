@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/adminUser.css">
+    <title>AdminUser</title>
+</head>
+
+<body>
+    <h2>Quản lý người dùng</h2>
+    <div class="container1">
+        <div class="clickA">
+            <a href="./adminPage.html">Về trang quản lý sản phẩm</a>
+        </div>
+        <div class="clickAA">
+            <a href="./index.html">Về Trang Chủ</a>
+        </div>
+    </div>
+
+    <div id="container">
+        <table border="1px" id="table1">
+
+            <!-- <tr>
+                <td>TÊN</td>
+                <td>EMAIL</td>
+                <td>CHỨC NĂNG</td>
+                <td>TRẠNG THÁI</td>
+            </tr> -->
+
+        </table>
+
+        <script>
+            let listRegister = JSON.parse(localStorage.getItem("listRegister"));
+            function renderListRegister() {
+                let result =
+                    ` 
+                  <tr>
+                    <td>TÊN</td>
+                    <td>EMAIL</td>
+                    <td colspan="2">CHỨC NĂNG</td>
+                    <td>TRẠNG THÁI</td>
+                  </tr>
+
+                `
+                for (let index = 0; index < listRegister.length; index++) {
+                    result +=
+                        `
+                  <tr>
+                    <td>${listRegister[index].name}</td>
+                    <td>${listRegister[index].mail}</td>
+                    <td><button onclick="Delete(${index})"> Xóa </button></td>
+                    <td><button id="button_${index}" onclick="key(${index})"> Khóa </button></td>
+                    <td class="td1"><span id="trangthai_${index}">Active</span></td>
+                  </tr>
+                  `
+                }
+                document.getElementById("table1").innerHTML = result;
+            }
+            renderListRegister()
+
+            function Delete(id) {
+                listRegister.splice(id, 1)
+                localStorage.setItem("listRegister", JSON.stringify(listRegister))
+                renderListRegister()
+            }
+            function key(id) {
+                let listRegister = JSON.parse(localStorage.getItem("listRegister"));
+                let user = listRegister[id];
+                if (user.trangthai === "Active") {
+                    user.trangthai = "Block";
+                    document.getElementById(`button_${id}`).innerHTML = "Mở khóa";
+                } else {
+                    user.trangthai = "Active";
+                    document.getElementById(`button_${id}`).innerHTML = "khóa";
+                }
+                document.getElementById(`trangthai_${id}`).innerHTML = user.trangthai;
+                localStorage.setItem("listRegister", JSON.stringify(listRegister));
+            }
+        </script>
+</body>
+
+</html>

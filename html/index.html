@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="containerHeader">
+            <div class="imageIcon">
+                <div class="img"><img src="../img/teddyicon.gif" alt="" width="100px" height="100px"></div>
+                <div id="title">
+                    <h2>My Teddy</h2>
+                </div>
+            </div>
+
+            <div class="input-Icon">
+                <input type="text" placeholder="Hãy tìm kiếm gấu bông của bạn muốn" class="inputSearch">
+                <i class="fa-solid fa-magnifying-glass fa-fade" style="color: #eba40a; font-size: x-large;"></i>
+            </div>
+            <div id="register" class="login-register">
+
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="drop-down">
+            <li class="click"><a href="#" style="text-decoration: none; color: #ec2b88;">
+                    <i class="fa-sharp fa-solid fa-globe" style="color: #d89118;"></i>Trang Chủ</a>
+            </li>
+            <li class="click"><i class="fa-solid fa-house" style="color: #d69524;"></i>Nhà Gấu
+                <!-- <ul class="small-nav">
+                    <li class="click">Gấu khổng lồ</li>
+                    <li class="click">Gấu teddy</li>
+                    <li class="click">Gấu dài</li>
+                    <li class="click">Gấu bông xù</li>
+                </ul> -->
+            </li>
+            <li class="click">
+                <i class="fa-solid fa-square-plus" style="color: #ca701c;"></i>
+                Gấu Mới
+            </li>
+            <li class="click">
+                <a href="../html/giohang.html" style="text-decoration: none; color: #ec2b88;"><i
+                        class="fa-solid fa-cart-shopping" style="color: #cb7525; "></i>Giỏ hàng</a>
+                <span id="cartCount"></span>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/338498879_523852799903543_3461442886078535202_n.jpg" alt="Los Angeles" class="d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/338573146_1301776230551224_771072603176705257_n.png" alt="Chicago" class="d-block">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/Quangcao.jpg" alt="New York" class="d-block" ;>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon prevw"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon nextt"></span>
+        </button>
+    </div>
+
+    <div class="content-wrapper">
+        <h1>Giới thiệu về My Teddy</h1>
+        <p>Chào mừng đến với trang web của chúng tôi - một trang web chuyên bán các loại gấu bông đáng yêu và dễ thương.
+            Tại đây, bạn có thể tìm thấy rất nhiều các sản phẩm gấu bông với nhiều màu sắc, kích cỡ và hình dáng khác
+            nhau
+            để phù hợp với sở thích của mọi người</p>
+
+        <p>Với chất lượng tốt và giá cả hợp lý, các sản phẩm gấu bông của chúng tôi được làm từ những chất liệu an toàn,
+            mềm mại và không gây dị ứng cho da. Bên cạnh đó, chúng tôi cũng cung cấp dịch vụ giao hàng nhanh chóng và
+            đảm
+            bảo sự hài lòng của khách hàng.</p>
+
+        <p>Đây là một địa chỉ tin cậy để bạn có thể mua sắm những chiếc gấu bông tuyệt vời để làm quà tặng cho bạn bè,
+            người thân hoặc cho chính mình. Hãy truy cập vào trang web của chúng tôi ngay hôm nay để khám phá thêm về
+            các
+            sản phẩm gấu bông độc đáo và thú vị nhé!</p>
+    </div>
+    
+     <div class="myProduct">
+        <p>Sản phẩm của cửa hàng</p>
+     </div>
+
+    <div id="bodyProduct">
+
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Về chúng tôi</h6>
+                    <p class="text-justify"> <br>
+                        Trang web được thành lập từ năm 2000 <br>
+                        Với chất lượng tốt và giá cả hợp lý, các sản phẩm gấu bông của chúng tôi được làm từ những chất
+                        liệu an toàn <br>
+                        Đây là một địa chỉ tin cậy để bạn có thể mua sắm những chiếc gấu bông tuyệt vời để làm quà tặng
+                        cho bạn bè, <br>
+                        sản phẩm gấu bông độc đáo và thú vị nhé!</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Thành phố</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Hà Nội</a></li>
+                        <li><a href="#">Đà Năng</a></li>
+                        <li><a href="#">Nha Trang</a></li>
+                        <li><a href="#">Vinh</a></li>
+                        <li><a href="#">Thanh Hóa</a></li>
+                        <li><a href="#">HCM</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Liên hệ</h6>
+                    <ul class="footer-links">
+                        <li><a href="#"></a>0979428686</li>
+                        <li><a href="#"></a>0979428686</li>
+                        <li><a href="#"></a>0979428686</li>
+                        <li><a href="#"></a>0979428686</li>
+                        <li><a href="#"></a>0979428686</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2000 All Rights Reserved by
+                        <a href="#">Scanfcode</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let listProductCart = JSON.parse(localStorage.getItem("listProductCart"));
+        let listProduct = JSON.parse(localStorage.getItem("listProduct"));
+
+        // đăng xuất
+        // gắn cờ cho đăng nhập khi đăng nhập sẽ hiện ra đăng xuất xóa cờ sẽ hiện ra đăng nhập/đăng ký
+        let loginFlag = localStorage.getItem("loginFlag")
+        // khai báo loginFlag=1 sau khi đăng nhập xong
+        let user = localStorage.getItem("flaguser") // đăng nhập thành công thì gọi cờ ra xog gán gtri cờ vào hello để hiển thị email đăng nhập
+        if (loginFlag == 1) {
+            document.getElementById("register").innerHTML = `<span>Hello, ${user}</span> <button onclick="logout()" class="logout">Đăng xuất</button>`;
+
+        } else {
+            document.getElementById("register").innerHTML =
+                ` <div class="btn-button">
+                    <button class="register-login" onclick="registerPage()">Đăng Ký</button>
+          <button  class="register-login" onclick="signinPage()">Đăng Nhập</button>
+                    </div> `
+
+        }
+        // đăng xuất
+        function logout() {
+            localStorage.setItem("loginFlag", 0);
+            localStorage.removeItem("flaguser");
+            window.location.href = "index.html";
+            renderCount();
+        }
+
+        // trang admin
+        const VND = new Intl.NumberFormat("vi-VN", {
+            style: "currency",
+            currency: "VND",
+        })
+
+        function renderListProduct() {
+            let productAdd = document.getElementById("bodyProduct")
+            for (i = 0; i < listProduct.length; i++) {
+                let gia = VND.format(listProduct[i].price)
+                let result1 =
+                    `<div id="product" class="product">
+                        <td><img src="${listProduct[i].img}" alt="${listProduct[i].name}" width="100px" height="100px" /></td>
+                        <p id="name">${listProduct[i].name}</p>
+                        <span id="price" class="price">${gia}</span>
+                        <div class="cart">
+                            <button class="addCart" id="addCart" onclick="addToCart(${listProduct[i].ma})"><i class="fa-solid fa-cart-shopping fa-shake fa-2xl" style="color: #f1096d;"></i></button>
+                            
+                        </div>
+                    </div>
+                    `
+                productAdd.innerHTML += result1
+            }
+        }
+        renderListProduct();
+
+        // hiển thị số sản phẩm trong giỏ hàng
+        function renderCount() {
+            let count = 0;
+            let listProductCartCount = JSON.parse(localStorage.getItem("listProductCart"));
+            let flaguser= localStorage.getItem("flaguser");
+            if (listProductCartCount == null) {
+                listProductCartCount = [];
+            }
+            if (flaguser == null) {
+                count = 0;
+                document.getElementById("cartCount").innerHTML = count;
+                return;
+            } else {
+                for (i = 0; i < listProductCartCount.length; i++) {
+                if (listProductCartCount[i].username == flaguser) {
+                    count++;
+                }
+            }
+            document.getElementById("cartCount").innerHTML = count;
+             }
+        }
+        renderCount();
+
+        //     // gắn cờ để khi đăng nhập mới được mua hàng
+        //     console.log(flaguser);
+        //     let loginSuccess = JSON.parse(localStorage.getItem("loginSuccess"));
+        //     if (loginSuccess == null) {
+        //         const snackbar = document.createElement("div"); { }
+        //         snackbar.classList.add("snackbar");
+        //         snackbar.innerText = "Đăng nhập để mua hàng";
+        //         document.body.appendChild(snackbar);
+
+        //         setTimeout(() => {
+        //             snackbar.remove();
+        //         }, 3000);
+        //         return;
+        //     }
+
+        //     // thêm sản phẩm vào giỏ hàng
+        //     // let user = flaguser;
+        //     if (listProductCart == null) {
+        //         listProductCart = [];
+        //         for (let k = 0; k < listProduct.length; k++) {
+        //             if (listProduct[k].ma == index) {
+        //                 console.log(user);
+        //                 listProduct[k].user = flaguser.user;
+        //                 listProductCart.push(listProduct[k]);
+        //                 console.log(listProductCart);
+        //                 // let obj = {
+        //                 //     ma: listProductCart[j].ma,
+        //                 //     name: listProductCart[j].name,
+        //                 //     price: listProductCart[j].price,
+        //                 //     sl: listProductCart[j].sl,
+        //                 //     img: listProductCart[j].img,
+        //                 //     user:user
+        //                 // }
+        //                 const snackbar = document.createElement("div"); { }
+        //                 snackbar.classList.add("snackbar");
+        //                 snackbar.innerText = "Đã thêm vào giỏ hàng";
+        //                 document.body.appendChild(snackbar);
+
+        //                 setTimeout(() => {
+        //                     snackbar.remove();
+        //                 }, 3000);
+        //                 // listProductCart.push(listProduct[i])
+
+        //                 localStorage.setItem("listProductCart", JSON.stringify(listProductCart));
+        //                 renderCount();
+        //                 return;
+        //             }
+        //         }
+        //     } else {
+        //         for (let i = 0; i < listProduct.length; i++) {
+        //             if (listProduct[i].ma == index) {
+        //                 let flag = true;
+        //                 for (j = 0; j < listProductCart.length; j++) {
+
+        //                         console.log(flaguser.user);
+        //                     if (listProductCart[j].ma == index && listProductCart[j].mail == flaguser.user) {
+
+        //                         flag = false;
+        //                         break;
+        //                     } else {
+        //                         flag = true;
+        //                     }
+        //                 }
+        //                 if (!flag) {
+        //                     const snackbar = document.createElement("div"); { }
+        //                     snackbar.classList.add("snackbar");
+        //                     snackbar.innerText = "Sản phẩm đã có trong giỏ hàng";
+        //                     document.body.appendChild(snackbar);
+
+        //                     setTimeout(() => {
+        //                         snackbar.remove();
+        //                     }, 3000);
+        //                     break;
+        //                 } else {
+        //                     console.log(flag);
+        //                     listProduct[i].user = flaguser.user;
+        //                     listProductCart.push(listProduct[i]);
+        //                     console.log(listProductCart);
+        //                     // let obj = {
+        //                     //     ma: listProductCart[j].ma,
+        //                     //     name: listProductCart[j].name,
+        //                     //     price: listProductCart[j].price,
+        //                     //     sl: listProductCart[j].sl,
+        //                     //     img: listProductCart[j].img,
+        //                     //     user:user
+        //                     // }
+        //                     const snackbar = document.createElement("div"); { }
+        //                     snackbar.classList.add("snackbar");
+        //                     snackbar.innerText = "Đã thêm vào giỏ hàng";
+        //                     document.body.appendChild(snackbar);
+
+        //                     setTimeout(() => {
+        //                         snackbar.remove();
+        //                     }, 3000);
+        //                     // listProductCart.push(listProduct[i])
+
+        //                     localStorage.setItem("listProductCart", JSON.stringify(listProductCart));
+        //                     renderCount();
+        //                     break;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        function addToCart(id) {
+            let flaguser = localStorage.getItem("flaguser");
+            // kiểm tra đăng nhập
+            if (flaguser == null) {
+                const snackbar = document.createElement("div");
+                snackbar.classList.add("snackbar");
+                snackbar.innerText = "Vui lòng đăng nhập.";
+                document.body.appendChild(snackbar);
+
+                setTimeout(() => {
+                    snackbar.remove();
+                }, 2000);
+                setTimeout(() => {
+                    window.location.href = "./signin.html";
+                }, 2000);
+            } else {
+                let listProductCart = JSON.parse(localStorage.getItem("listProductCart"));
+                let listProduct = JSON.parse(localStorage.getItem("listProduct"));
+                if (listProductCart == null) {
+                    listProductCart = [];
+
+                }
+                for (let index = 0; index < listProduct.length; index++) {
+                    if (listProduct[index].ma == id) {
+                        let flag = true;
+                        for (let i = 0; i < listProductCart.length; i++) {
+                            if ( listProductCart[i].ma == id && listProductCart[i].username == flaguser) 
+                            {
+                                flag = false;
+                                break;
+                            } else {
+                                flag = true;
+                            }
+                        }
+                        if (!flag) {
+                            const snackbar = document.createElement("div");
+                            snackbar.classList.add("snackbar");
+                            snackbar.innerText = "Sản phẩm đã có trong giỏ hàng.";
+                            document.body.appendChild(snackbar);
+
+                            setTimeout(() => {
+                                snackbar.remove();
+                            }, 3000);
+                        } else {
+                            listProductCart.push(listProduct[index]);
+                            listProductCart[listProductCart.length - 1].username = flaguser;
+                            localStorage.setItem( "listProductCart",JSON.stringify(listProductCart));
+                            const snackbar = document.createElement("div");
+                            snackbar.classList.add("snackbar");
+                            snackbar.innerText = "Đã  thêm vào giỏ hàng";
+                            console.log("6666766");
+                            renderCount();
+                            document.body.appendChild(snackbar);
+                            setTimeout(() => {
+                                snackbar.remove();
+                            }, 3000);
+                        }
+                        break;
+                    }
+                }
+                renderCount();
+               
+
+            }
+        }
+    </script>
+    <script src="../js/register-login.js"></script>
+</body>
+
+</html>

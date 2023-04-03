@@ -1,0 +1,166 @@
+
+body {
+    background-image: url(../img/2641051.gif);
+    background-size: cover;
+}
+
+#container {
+    border: double 5px rgb(255, 153, 0);
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    /* background: linear-gradient(to right, #FAFFB4 0%, #F6FF3A 50%, #F0FDA9 100%); */
+    background: linear-gradient(to right, #A4F6E3 0%, #F9CBFF 50%, #7BDDEE 100%);
+    /* background-color: bisque; */
+    margin: 0 auto;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+h2 {
+    color: #cc00ff;
+    font-size: 25px;
+    text-align: center;
+}
+
+input {
+    outline: none;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    /* border: 0;
+    border-bottom:1px solid rgb(0, 0, 0); */
+    background: rgb(235, 234, 232) ;
+}
+
+label {
+    font-size: 20px;
+    color: #ea1fad;
+    margin-left: 53px;
+    margin-right: 10px;
+}
+
+button {
+    margin-left: 120px;
+    height: 50px;
+    width: 150px;
+    background: linear-gradient(to right, #40E9F6 0%, #F37DFF 50%, #46C1C7 100%);
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(249, 245, 242);
+}
+ span{
+    margin-left: 2rem;
+}
+
+button:hover {
+    color: rgb(255, 20, 20);
+    background-color: rgb(156, 202, 248);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+
+}
+.clickTeddyStore {
+    margin-top: 40px;
+    text-align: center;
+   
+}
+
+a{
+font-size: 25px;
+color: #fc084d;
+text-decoration: none;
+}
+#snack-bar-register {
+    visibility: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 250px;
+    min-height: 50px;
+    background-size: cover;
+    background-image: url(../img/snackBarbg.jpg);
+    border: 2px solid rgb(23, 198, 233);
+    box-shadow: 0px 0px 30px 11px rgb(239, 136, 174);
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 200px;
+    font-size: 17px;
+    padding: 25px;
+    color: rgb(233, 28, 117);
+}
+
+#snack-bar-register {
+    margin-left: -180px;
+}
+
+#snack-bar-register.show {
+    margin-left: -165px;
+}
+
+
+#snack-bar-register.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.container span {
+    margin-left: 2rem;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 200px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 200px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 200px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 200px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

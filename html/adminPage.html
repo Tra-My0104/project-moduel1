@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/adminPage.css">
+    <title>AdminPage</title>
+</head>
+
+<body>
+    <h2>Quản lý sản phẩm</h2>
+    <div id="container">
+        <div class="inputProfile">
+            <label>ID</label> <br>
+            <input type="number" id="ma"> <br>
+
+            <label>Tên</label> <br>
+            <input type="text" id="name"> <br>
+
+            <label>Giá</label> <br>
+            <input type="number" id="price"> <br>
+
+            <label>Số lượng</label> <br>
+            <input type="number" id="sl"> <br>
+
+            <div class="small-container">
+                <input class="product-input" type="file" id="imgProduct" style="outline: none" />
+                <img id="image" src="" alt="Không hiển thị được ảnh" width="100px" height="100px" />
+            </div>
+
+            <button onclick="addPage()">Add</button> <br>
+
+            <input type="text" id="searchProduct" placeholder="tìm kiếm sản phẩm">
+            <button onclick="renderListProduct()">Tìm kiếm</button>
+
+        </div>
+        <div class="goBack">
+            <div class="clickA">
+                <a href="./index.html">Về trang chủ</a> <br>
+            </div>
+            <div class="clickAA">
+                <a href="./adminUser.html">Sang trang quản lý người dùng</a>
+            </div>
+        </div>
+    </div>
+    <div class="inputTable">
+        <table border="1px" id="table">
+
+
+        </table>
+    </div>
+
+    </div>
+
+    <script src="../js/adminPage.js"></script>
+</body>
+
+</html>
